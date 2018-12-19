@@ -6,6 +6,10 @@ import (
 )
 
 func main() {
+	
+	
+	//
+	//slice 切片
 
 	fmt.Println(len([]string{"Go", "Python", "Java", "C", "C++", "PHP"}))
 	fmt.Println(cap([]string{"Go", "Python", "Java", "C", "C++", "PHP"}))
