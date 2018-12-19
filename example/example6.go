@@ -5,6 +5,9 @@ import (
 	"fmt"
 )
 
+
+//switch 2种表示
+
 func main() {
 
 	num := 123
