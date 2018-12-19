@@ -1,6 +1,8 @@
 // test project main.go
 package main
 
+//errorsåŒ…å¤„ç†ç¤ºä¾‹
+
 import (
 	"errors"
 	"fmt"
@@ -10,7 +12,7 @@ func update(id int, deptment string) bool {
 	if id <= 0 {
 		return false
 	}
-	//Ê¡ÂÔÈô¸ÉÌõÓï¾ä
+	//ÃŠÂ¡Ã‚Ã”ÃˆÃ´Â¸Ã‰ÃŒÃµÃ“Ã¯Â¾Ã¤
 	return true
 }
 
