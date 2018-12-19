@@ -14,5 +14,6 @@ func main() {
 	}
 	//x := []int{10, 5}
 	fmt.Println(f())
+	fmt.Println(a)
 	
 }
