@@ -7,6 +7,10 @@ import (
 
 func main() {
 
+
+	//golang for 循环处理示例
+	var cnt int = 0
+
 	number := 1
 
 	for number < 200 {
@@ -15,7 +19,12 @@ func main() {
 
 	for {
 		number++
+		cnt++
 		fmt.Println(number)
+		if cnt == 10{
+			break
+		}
+
 	}
 
 }
