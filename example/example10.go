@@ -6,12 +6,16 @@ import (
 )
 
 func findEvildoer(name string) string {
+
+	//goto ç”¨æ³•ç¤ºä¾‹
+
+
 	var evildoer string
 	for _, r := range name {
 		switch {
 		case r >= '\u0041' && r <= '\u005a': // a-z
 		case r >= '\u0061' && r <= '\u0071': //A-Z
-		case r >= '\u4e00' && r <= '\u9fbf': //ÖÐÎÄ×Ö·û
+		case r >= '\u4e00' && r <= '\u9fbf': //å…¶ä»–ç 
 			goto L3
 		default:
 			evildoer = string(r)
@@ -25,6 +29,6 @@ L3:
 	return evildoer
 }
 
-func main() {
+func main() { 
 	findEvildoer("kkkkk@@@@")
 }
