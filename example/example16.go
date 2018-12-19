@@ -11,6 +11,7 @@ type Addr struct {
 	district string
 }
 
+//golang 继承
 type Person struct {
 	Name    string
 	Age     uint8
