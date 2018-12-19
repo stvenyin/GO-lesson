@@ -51,6 +51,8 @@ func main() {
 
 //2rd
 
+package main
+
 import (
 	"errors"
 	"fmt"
@@ -65,10 +67,10 @@ func update(id int, deptment string) bool {
 }
 
 func updateerror(id int, deptment string) error {
-	if id <= 0 {
+		if id <= 0 {
 		return errors.New("The id is INVALID!")
-	}
-	return nil
+		}
+		return nil
 }
 
 func main() {
