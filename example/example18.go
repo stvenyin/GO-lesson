@@ -1,27 +1,44 @@
-// test project main.go
 package main
 
-import (
-	"calc" //×Ô¶¨ÒåµÚÈı·½°ü
-	"fmt"
-)
+import "fmt"
 
-//GO ¶àÌ¬ÊµÏÖ
-
-type Brid struct {
+type IMessage interface {
+		Print()						//void * æŒ‡é’ˆ,å’ŒC/C++ ä¸­ä¸å­˜åœ¨è™šå‡½æ•°æŒ‡é’ˆåˆ—è¡¨
+}
+type BaseMessage struct {
+	msg string
 }
 
-type LFly interface {
-	Fly()
+type SubMessage struct {
+	BaseMessage
 }
 
-func (b *Brid) Fly() {
-	fmt.Println("Fly...")
+func (message *BaseMessage) Print() {
+
+	fmt.Println("baseMessage:msg", message.msg)
+}
+
+
+func (message *SubMessage) Print() {
+
+	fmt.Println("subMessage:msg", message.msg)
+}
+
+func interface_use(i IMessage) {
+
+		i.Print()
 }
 
 func main() {
-	var fly LFly = new(Brid)
-	fly.Fly()
-	fmt.Println(calc.Add(10, 20))
 
+	baseMessage := new(BaseMessage)
+	baseMessage.msg = "a"
+	interface_use(baseMessage)
+
+	SubMessage := new(SubMessage)
+	SubMessage.msg = "b"
+	interface_use(SubMessage)
 }
+
+
+
