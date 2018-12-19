@@ -1,6 +1,6 @@
 // test project main.go
 package main //命令源码文件必须在这里声明自己属于main包
-
+https://studygolang.com/pkgdoc GODOC官网
 import (
 	"fmt"
 	"runtime"
