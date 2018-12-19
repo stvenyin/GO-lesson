@@ -60,7 +60,7 @@ func update(id int, deptment string) bool {
 	if id <= 0 {
 		return false
 	}
-	//Ê¡ÂÔÈô¸ÉÌõÓï¾ä
+	//错误处理
 	return true
 }
 
