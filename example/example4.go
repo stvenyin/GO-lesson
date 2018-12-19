@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func main() {a
 	
 	
 	//
@@ -38,5 +38,7 @@ func main() {
 	fmt.Println(slice1)
 	fmt.Println(slice2)
 	fmt.Println(array)
+	     
+	     //完整demo
 
 }
