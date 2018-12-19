@@ -2,11 +2,14 @@ package main
 
 import (
 	"fmt"
+	"time"
 	_ "time"
 )
 
+//goruite
+
 func test_print(a int) {
-	fmt.Print(a)
+	fmt.Println(a)
 }
 
 func test_pipe() {
@@ -23,8 +26,10 @@ func test_pipe() {
 func main() {
 
 	test_pipe()
-	//for i := 0; i < 100; i++ {
-	//	go test_print(i)
-	//}
-	//time.Sleep(time.Second)
+	for i := 0; i < 100; i++ {
+		go test_print(i)
+	}
+	time.Sleep(time.Second)
 }
+
+//
